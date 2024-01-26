@@ -14,8 +14,9 @@ public class TupleDesc {
      * @param td2 The TupleDesc with the last fields of the TupleDesc
      * @return the new TupleDesc
      */
+    private TupleDesc td1;
+    private TupleDesc td2;
     public static TupleDesc combine(TupleDesc td1, TupleDesc td2) {
-        // some code goes here
         return null;
     }
 

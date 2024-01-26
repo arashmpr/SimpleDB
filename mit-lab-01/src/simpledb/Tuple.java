@@ -13,16 +13,17 @@ public class Tuple {
      * @param td the schema of this tuple. It must be a valid TupleDesc
      * instance with at least one field.
      */
+    private TupleDesc td;
+    private RecordId rid;
     public Tuple(TupleDesc td) {
-        // some code goes here
+        this.td = td;
     }
 
     /**
      * @return The TupleDesc representing the schema of this tuple.
      */
     public TupleDesc getTupleDesc() {
-        // some code goes here
-        return null;
+        return td;
     }
 
     /**
@@ -30,8 +31,7 @@ public class Tuple {
      *   disk. May be null.
      */
     public RecordId getRecordId() {
-        // some code goes here
-        return null;
+        return rid;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Tuple {
      * @param rid the new RecordId for this tuple.
      */
     public void setRecordId(RecordId rid) {
-        // some code goes here
+        this.rid = rid;
     }
 
     /**
